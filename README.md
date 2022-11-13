@@ -1,2 +1,2 @@
 # Ma5hr00mBlog
-This site's function include  recording my daily study and some clutter.
+记录自己的日常学习生活，包括练手做出来的网站页面、学习到的知识、生活里的一些想法、自己设计的页面...
