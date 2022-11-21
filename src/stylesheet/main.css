@@ -40,6 +40,19 @@ header{
     font-family: Arial;
     font-weight: 400;
 }
+#author-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 300px;
+    width: 100%;
+
+    margin: 0;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding: 0;
+}
 main{
     display: block;
     align-items: center;
@@ -61,6 +74,8 @@ footer{
 
     background-color: transparent;
 }
+
+
 
 /* header wrapper */
 #header-wrapper{
@@ -136,6 +151,42 @@ footer{
     height: 24px;
     width: 24px;
 }
+
+
+/* author box */
+#author-wrapper{
+    display: block;
+
+    height: 100%;
+    width: 100%;
+
+    padding: auto;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+#avator-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0;
+}
+#avatar-link{
+    display: block;
+    margin: auto;
+
+    height: fit-content;
+    width: fit-content;
+}
+#avatar{
+    height: 100px;
+    width: 100px;
+
+    border-radius: 100%;
+    overflow: hidden;
+}
+
 
 /* main box */
 #main-wrapper{
