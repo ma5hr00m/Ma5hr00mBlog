@@ -45,13 +45,11 @@ header{
     align-items: center;
     justify-content: center;
 
-    height: 300px;
+    height: 200px;
     width: 100%;
 
-    margin: 0;
-    margin-top: 50px;
+    margin-top: 40px;
     margin-bottom: 20px;
-    padding: 0;
 }
 main{
     display: block;
@@ -186,7 +184,38 @@ footer{
     border-radius: 100%;
     overflow: hidden;
 }
+#name-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+    height: fit-content;
+
+    margin-top: 12px;
+}
+#name{
+    color: #dddddd;
+    font-size: 30px;
+    font-family: Arial;
+    font-weight: 600;
+}
+#impression-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: fit-content;
+
+    margin-top: 12px;
+}
+.impression{
+    padding: 5px 12px;
+
+    color: #a0a0a0;
+    font-size: 12px;
+    font-family: Arial;
+    font-weight: 600;
+}
 
 /* main box */
 #main-wrapper{
