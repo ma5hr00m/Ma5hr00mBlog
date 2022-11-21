@@ -64,7 +64,8 @@ header{
 
     margin: 0px;
     margin-top: 32px;
-    padding: 0px;
+    padding-left: 400px;
+    padding-right: 400px;
 
     background-color: #2986ed;
 }
