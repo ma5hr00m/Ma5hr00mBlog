@@ -117,7 +117,7 @@ footer{
 
 /* header set */
 #logo{
-    height: 70px;
+    height: 64px;
 }
 #search-wrapper{
     display: flex;
@@ -186,6 +186,7 @@ footer{
 
 /* nac set */
 #nav-list{
+    cursor: pointer;
     display: flex;
     justify-content: space-between;
 
@@ -237,15 +238,124 @@ footer{
 }
 
 #notice-box{
+    display: block;
     position: relative;
 
     height: fit-content;
 
-    padding: 30px 20px;
+    padding: 20px;
     margin-left: 460px;
     margin-right: 460px;
-    margin-top: 40px;
+    margin-top: 30px;
 
     background-color: #ffffff;
-    box-shadow: 0px 0p 10px #eeeeee;
+    box-shadow: 0px 0px 10px 2px #eeeeee;
+}
+h2{
+    color: #333333;
+
+    border-bottom: 1px solid #eeeeee;
+
+    margin: 0px;
+    padding-bottom: 10px;
+}
+.notice-line{
+    margin: 0;
+
+    color: #e53333;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 48px;
+}
+#notice-top{
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 78px;
+}
+.attach-links{
+    color: #e53333;
+    text-decoration: none;
+    font-weight: 700;
+}
+.attach-links:hover{
+    color: #1c86ee;
+    text-decoration: none;
+    font-weight: 700;
+}
+#list-box{
+    display: block;
+    position: relative;
+
+    height: fit-content;
+
+    padding: 0;
+    margin-left: 460px;
+    margin-right: 460px;
+    margin-top: 30px;
+
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px 2px #eeeeee;
+}
+#src-list{
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+}
+.src-items,.src-head{
+    display: grid;
+    grid-template-columns: 7fr 2fr 2fr;
+
+    height: 20px;
+    width: auto;
+
+    padding: 15px 20px;
+}
+.src-head{
+    background-color: #f5f5f5;
+
+    color: #666666;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+.src-items:hover{
+    background-color: #f5f5f5;
+}
+.src-contents{
+    color: #222222;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+.src-contents{
+    cursor: pointer;
+
+    color: #222222;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+.src-contents:hover{
+    color: #1c86ee;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+.src-times{
+
+    color: #999999;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+.new-links{
+    text-decoration: none;
+    color: #ff0000;
 }
