@@ -1,17 +1,15 @@
-function removeTransition(event){
-    if (event.propertyName !== 'transform') return; // 过滤其中一种事件
-    event.target.classList.remove('press'); 
-}
-
 function playSound(event){
-    const audio = document.querySelector(`audio`);
     const key = document.querySelector(`div[data-key="${event.keyCode}"]`);
+    const audio = document.querySelector(`audio`);
 
-    key.classList.add('press');
+    key.classList.add('playing');
     audio.currentTime =0;
     audio.play();
 }
+function removeStyle(event){
+    const key = document.querySelector(`div[data-key="${event.keyCode}"]`);
+    key.classList.remove('playing');
+}
 
-const keys = Array.from(document.querySelectorAll('.keys'));
-keys.forEach(key => key.addEventListener('transitioned',removeTransition));
 window.addEventListener('keydown', playSound);
+window.addEventListener('keyup', removeStyle);

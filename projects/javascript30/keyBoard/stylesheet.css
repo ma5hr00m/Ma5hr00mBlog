@@ -131,17 +131,26 @@ main{
     border-radius: 20px;
 
     background-color: #202020;
-}
-.press{
-    color: #4a4a4a;
 
-    background-color: #c7c7c7;
-
-    border: 4px solid #f6f6f6;
-}
-.values{
     color: #dddddd;
     font-size: 32px;
     font-family: Arial;
     font-weight: 600;
+
+    transition: all 1ms;
+}
+.playing{
+    animation-name: spark;
+    animation-duration: 0.3s;
+}
+@keyframes spark{
+    from{
+        background-color: #c7c7c7;
+        border: 4px solid #f6f6f6;
+    }
+
+    to{
+        background-color: #202020;
+        border: 4px solid #444444;
+    }
 }
