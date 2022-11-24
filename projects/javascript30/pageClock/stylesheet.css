@@ -57,10 +57,71 @@ header{
 
 main{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     position: fixed;
 
     height: 100%;
     width: 100%;
 
     margin-top: 30px;
+
+    background-color: #2a2a2a;
+}
+.clock-face{
+    position: relative;
+
+    height: 400px;
+    width: 400px;
+
+    border: 20px solid #f6f6f6;
+    border-radius: 50%;
+    background-color: #444444;
+
+    transform: translateY(-8px);
+}
+.hand{
+    position: absolute;
+    width: 180px;
+    height: 16px;
+
+    left: 20px;
+    top: 50%;
+
+    transform-origin: right;
+    transition: all 0.05s;
+    transform: rotate(90deg);
+
+    background-color: #dddddd;
+}
+.center{
+    position: absolute;
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    top: 188px;
+    left: 180px;
+
+    background-color: #b7b7b7;
+
+    z-index: 2;
+}
+
+.time-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 80px;
+    font-family: Arial;
+    font-weight: 600;
+    color: #eeeeee;
+
+    margin-top: 40px;
+
+    height: 100px;
+    width: 400px;
 }
