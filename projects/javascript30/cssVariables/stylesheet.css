@@ -1,3 +1,9 @@
+:root{
+    --size: 400px;
+    --blur: 0px;
+    --color: #ffffff; 
+}
+
 body{
     display: block;
     position: relative;
@@ -55,4 +61,57 @@ header{
     border-left: 6px solid transparent;
     border-bottom: 6px solid transparent;
     border-top: 6px solid transparent;
+}
+
+main{
+    display: block;
+    position: fixed;
+
+    height: 100%;
+    width: 100%;
+
+    margin-top: 30px;
+
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 200px;
+
+    color: var(--color);
+    font-size: 60px;
+    font-family: Arial;
+    font-weight: 800;
+}
+
+
+.controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 80px;
+}
+label{
+    padding: 10px 10px 10px 50px;
+
+    color: #f6f6f6;
+    font-size: 20px;
+    font-family: Arial;
+    font-weight: 600;
+}
+.display{
+    display: flex;
+
+    width: 100%;
+}
+.img{
+    height: var(--size);
+
+    margin: auto ;
+
+    filter: blur(var(--blur));
 }

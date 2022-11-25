@@ -9,6 +9,22 @@
         <header>
             <a id="home" href="../../../index.html">Home</a>
         </header>
+        <main>
+            <div class="title">
+                <span>Try to change the image!</span>
+            </div>
+            <div class="controls">
+                <label for="size">Size</label>
+                <input id="size" type="range" min="200" max="600" value="400" data-sizing="px">
+                <label for="blur">Blur</label>
+                <input id="blur" type="range" min="0" max="25" value="0" data-sizing="px">
+                <label for="color">Color</label>
+                <input id="color" type="color" value="#ffffff">
+            </div>
+            <div class="display">
+                <img class="img" src="./display.jpg">
+            </div>
+        </main>
         <script src="./main.js"></script>
     </body>
 </html>
